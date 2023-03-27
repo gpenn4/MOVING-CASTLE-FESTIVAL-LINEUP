@@ -12,7 +12,8 @@
             border: 1px solid;
             height: 90%;
         }
-        table{
+
+        table {
             width: 100%;
             height: 100px;
         }
@@ -111,6 +112,37 @@
                     -0.04em -0.025em 0 #fffc00;
             }
         }
+
+        .kiko {
+            align-self: flex-end;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            height: 70px;
+            margin: 0 auto 0 auto;
+            transform-origin: bottom;
+            width: auto;
+            float: right;
+            padding-right: 150px;
+        }
+
+        .bounce-2 {
+            animation-name: bounce-2;
+            animation-timing-function: ease;
+        }
+
+        @keyframes bounce-2 {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-100px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
     </style>
 
     <!-- Display the countdown timer in an element -->
@@ -164,6 +196,7 @@
                     boogie beginning in...
                     <span aria-hidden="true"> boogie beginning in..</span>
                 </p>
+                <img class="kiko bounce-2" src="299211751_469693988044096_1563050634292984148_n copy.png" alt="kiko"/>
                 <center>
                     <p id="clockdown" class="glitch" style="font-size: 80px;"><span id="clockdown"
                             aria-hidden="true"></span>
@@ -218,7 +251,7 @@
                                             <p class="glitch2">16:30</p>
                                         </td>
                                     </tr>
-                                    
+
                                     <tr>
                                         <td>
                                             <img src="https://data.textstudio.com/output/user/store/e/7/c/9/fe3a9473-5edd-4919-87f2-b3fa48549c7e.png"
