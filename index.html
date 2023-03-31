@@ -22,6 +22,12 @@
             width: auto;
         }
 
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .column {
             float: left;
             width: 33.33%;
@@ -155,6 +161,11 @@
     <script>
         // Set the date we're counting down to
         var countDownDate = new Date("April 1, 2023 13:00:00").getTime();
+        var onePM = new Date("April 1, 2023 13:00:00").getTime();
+
+        var test = new Date("March 31, 2023 17:23:00").getTime();
+
+        const aa = "<img src=\"https://data.textstudio.com/output/user/store/b/e/5/7/13f0364f-fdb8-4c8d-821b-61d3470375eb.png\" alt=\"Armitage Skanks\" width=\"80%\" />";
 
 
         // Update the count down every 1 second
@@ -177,17 +188,6 @@
             // onePM.setMinutes(0);
             // onePM.setSeconds(0);
 
-            // var delay = targetTime.getTime() - now.getTime();
-
-            // setTimeout(function () {
-            //     // Get the <div> element with ID "myDiv"
-            //     var myDiv = document.getElementById("myDiv");
-
-            //     // Set the inner HTML to "Good evening!"
-            //     myDiv.innerHTML = "Good evening!";
-            // }, delay); 
- 
-
             // Display the result in the element with id="demo"
             document.getElementById("clockdown").innerHTML = days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s ";
@@ -195,18 +195,226 @@
             // If the count down is finished, write some text 
             if (distance < 0) {
                 clearInterval(x);
-                // document.getElementById("clockdown").innerHTML = "EXPIRED";
-                countDownDate = new Date("April 1, 2023 21:00:00")
-                now = new Date().getTime();
-                distance = countDownDate - now;
 
-                while (distance > 0) {
+                var d = new Date();
+                if (d.getHours() >= 13 && d.getHours() < 14) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
 
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act1 = document.createElement('img');
+                    act1.height = 100;
+                    act1.className = "column";
+                    act1.src = "https://data.textstudio.com/output/user/store/b/e/5/7/13f0364f-fdb8-4c8d-821b-61d3470375eb.png";
+                    clock.appendChild(act1);
+
+                    const act2 = document.createElement('img');
+                    act2.height = 100;
+                    act2.className = "column";
+                    act2.src = "https://data.textstudio.com/output/user/store/3/3/8/2/97e2ae50-982b-4bb3-87b9-08c8d6492833.png";
+                    clock.appendChild(act2);
+
+                    const act3 = document.createElement('img');
+                    act3.height = 100;
+                    act3.className = "columm";
+                    act3.src = "https://data.textstudio.com/output/user/store/d/8/f/e/bf4a50e8-51cd-43fa-b87c-67e87436ef8d.png";
+                    clock.appendChild(act3);
+
+                } else if (d.getHours() >= 14 && d.getHours() < 15) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act4 = document.createElement('img');
+                    act4.height = 100;
+                    act4.className = "column";
+                    act4.src = "https://data.textstudio.com/output/user/store/8/b/8/6/9619570e-f360-46cc-b163-d4134ba668b8.png";
+                    clock.appendChild(act4);
+
+                    const act5 = document.createElement('img');
+                    act5.height = 100;
+                    act5.className = "column";
+                    act5.src = "https://data.textstudio.com/output/user/store/1/f/d/4/2c813eed-9b07-4ff5-bff0-b5ddf03b4df1.png";
+                    clock.appendChild(act5);
+
+                    const act6 = document.createElement('img');
+                    act6.height = 100;
+                    act6.className = "columm";
+                    act6.src = "https://data.textstudio.com/output/user/store/d/8/f/e/bf4a50e8-51cd-43fa-b87c-67e87436ef8d.png";
+                    clock.appendChild(act6);
+
+
+                } else if (d.getHours() >= 15 && d.getHours() < 16) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act7 = document.createElement('img');
+                    act7.height = 100;
+                    act7.className = "column";
+                    act7.src = "https://data.textstudio.com/output/user/store/7/1/6/c/ff21d723-41cb-4dd1-aca2-e3473db2c617.png";
+                    clock.appendChild(act7);
+
+                    const act8 = document.createElement('img');
+                    act8.height = 100;
+                    act8.className = "column";
+                    act8.src = "https://data.textstudio.com/output/user/store/7/8/9/e/8be34bde-a389-4a81-8d88-b8216cb4e987.png";
+                    clock.appendChild(act8);
+
+                    const act9 = document.createElement('img');
+                    act9.height = 100;
+                    act9.className = "columm";
+                    act9.src = "https://data.textstudio.com/output/user/store/1/9/2/e/c0ce7f5f-98aa-4ac2-acec-c3c4ce14e291.png";
+                    clock.appendChild(act9);
+
+
+                } else if (d.getHours() >= 16 && d.getHours() < 17) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act10 = document.createElement('img');
+                    act10.height = 100;
+                    act10.className = "column";
+                    act10.src = "https://data.textstudio.com/output/user/store/7/1/6/c/ff21d723-41cb-4dd1-aca2-e3473db2c617.png";
+                    clock.appendChild(act10);
+
+                    const act11 = document.createElement('img');
+                    act11.height = 100;
+                    act11.className = "column";
+                    act11.src = "https://data.textstudio.com/output/user/store/b/0/5/7/a65d10ae-b275-45de-8220-ad77a51e750b.png";
+                    clock.appendChild(act11);
+
+                    const act12 = document.createElement('img');
+                    act12.height = 100;
+                    act12.className = "columm";
+                    act12.src = "https://data.textstudio.com/output/user/store/a/5/f/c/00da97c0-32c2-402a-822c-15be25f8cf5a.png";
+                    clock.appendChild(act12);
+
+
+                } else if (d.getHours() >= 17 && d.getHours() < 18) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act13 = document.createElement('img');
+                    act13.height = 100;
+                    act13.className = "column";
+                    act13.src = "https://data.textstudio.com/output/user/store/c/3/6/2/6dd4a1a0-7770-40dc-a1ed-cc5f76e6263c.png";
+                    clock.appendChild(act13);
+
+                    const act14 = document.createElement('img');
+                    act14.height = 100;
+                    act14.className = "column";
+                    act14.src = "https://data.textstudio.com/output/user/store/e/f/e/9/a32a983e-015a-4bb7-8f55-b87a264e9efe.png";
+                    clock.appendChild(act14);
+
+                    const act15 = document.createElement('img');
+                    act15.height = 100;
+                    act15.className = "columm";
+                    act15.src = "https://data.textstudio.com/output/user/store/0/9/1/7/fc42613b-f294-438b-994a-0c5dcfc27190.png";
+                    clock.appendChild(act15);
+
+                }
+                else if (d.getHours() >= 18 && d.getHours() < 19) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act16 = document.createElement('img');
+                    act16.height = 100;
+                    act16.className = "column";
+                    act16.src = "https://data.textstudio.com/output/user/store/e/7/c/9/fe3a9473-5edd-4919-87f2-b3fa48549c7e.png";
+                    clock.appendChild(act16);
+
+                    const act17 = document.createElement('img');
+                    act17.height = 100;
+                    act17.className = "column";
+                    act17.src = "https://data.textstudio.com/output/user/store/9/a/0/a/12ef9f99-0a8f-47f0-bab2-1f81af3ba0a9.png";
+                    clock.appendChild(act17);
+
+                    const act18 = document.createElement('img');
+                    act18.height = 100;
+                    act18.className = "columm";
+                    act18.src = "https://data.textstudio.com/output/user/store/0/9/1/7/fc42613b-f294-438b-994a-0c5dcfc27190.png";
+                    clock.appendChild(act18);
+                }
+                else if (d.getHours() >= 19 && d.getHours() < 20) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act16 = document.createElement('img');
+                    act16.height = 100;
+                    act16.className = "column";
+                    act16.src = "https://data.textstudio.com/output/user/store/7/8/c/4/3d897914-e95a-4359-8a14-9d360e234c87.png";
+                    clock.appendChild(act16);
+
+                    const act17 = document.createElement('img');
+                    act17.height = 100;
+                    act17.className = "column";
+                    act17.src = "https://data.textstudio.com/output/user/store/3/8/3/c/af7ee0d7-4719-40ed-b34f-802d6df3c383.png";
+                    clock.appendChild(act17);
+
+                    const act18 = document.createElement('img');
+                    act18.height = 100;
+                    act18.className = "columm";
+                    act18.src = "https://data.textstudio.com/output/user/store/b/2/0/c/5e447b82-4f8b-49c6-bc2f-68bdedb0c02b.png";
+                    clock.appendChild(act18);
+                } else if (d.getHours() >= 20 && d.getHours() < 21) {
+                    document.getElementById("clock").innerHTML = "<img src=\"https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" class=\"center\"/>";
+
+                    document.getElementById("clock").style.background = 'red';
+
+                    const clock = document.getElementById("clock");
+                    const act16 = document.createElement('img');
+                    act16.height = 100;
+                    act16.className = "column";
+                    act16.src = "https://data.textstudio.com/output/user/store/1/2/c/1/4b6f6c90-fb8d-4f19-91ea-ea8e7fde1c21.png";
+                    clock.appendChild(act16);
+
+                    const act17 = document.createElement('img');
+                    act17.height = 100;
+                    act17.className = "column";
+                    act17.src = "https://data.textstudio.com/output/user/store/4/5/a/f/4619871e-1b7d-49b3-8683-c29e0443fa54.png";
+                    clock.appendChild(act17);
+
+                    const act18 = document.createElement('img');
+                    act18.height = 100;
+                    act18.className = "columm";
+                    act18.src = "https://data.textstudio.com/output/user/store/e/e/9/c/28b611fc-3c74-4b84-812f-a4f50105c9ee.png";
+                    clock.appendChild(act18);
+                }
+                else {
+                   
 
                 }
 
+
+                // document.getElementById("clockdown").innerHTML = "<img src=\https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif\" alt=\"LIVE NOW\" width=\"20%\" />"
+
+                //"<img src=\"https://data.textstudio.com/output/user/store/b/e/5/7/13f0364f-fdb8-4c8d-821b-61d3470375eb.png\" alt=\"Armitage Skanks\" width=\"80%\" />";
+
+                // countDownDate = new Date("April 1, 2023 21:00:00")
+                // now = new Date().getTime();
+                // distance = countDownDate - now;
+
+                // while (distance > 0) {
+
+
+                // }
+
             }
         }, 1000);
+
+
 
 
 
@@ -235,17 +443,27 @@
                 <!-- <img src="https://data.textstudio.com/output/user/store/9/3/3/a/03119360-ee28-4edb-b80b-5a331b69a339.gif"
                     alt="LIVE NOW" width="20%" /> -->
 
-                <p class="glitch"><span aria-hidden="true">boogie beginning in..</span>
-                    boogie beginning in...
-                    <span aria-hidden="true"> boogie beginning in..</span>
-                </p>
-                <img class="kiko bounce-2" src="299211751_469693988044096_1563050634292984148_n copy.png" alt="kiko" />
-                <center>
-                    <p id="clockdown" class="glitch" style="font-size: 80px;"><span id="clockdown"
-                            aria-hidden="true"></span>
-                        <span id="clockdown" aria-hidden="true"></span>
+                <div id="clock">
+                    <p class="glitch"><span aria-hidden="true">boogie beginning in..</span>
+                        boogie beginning in...
+                        <span aria-hidden="true"> boogie beginning in..</span>
                     </p>
-                </center> 
+                    <img class="kiko bounce-2" src="299211751_469693988044096_1563050634292984148_n copy.png"
+                        alt="kiko" />
+                    <center>
+                        <p id="clockdown" class="glitch" style="font-size: 80px;"><span id="clockdown"
+                                aria-hidden="true"></span>
+                            <span id="clockdown" aria-hidden="true"></span>
+                        </p>
+                    </center>
+                    <!-- <table id="lives">
+                        <tr>
+                            <td>
+                            <td>
+                            <td></td>
+                        </tr>
+                    </table> -->
+                </div>
                 <!-- <center> -->
                 <div class="row">
                     <div class="column">
@@ -464,7 +682,7 @@
                                 <tr>
                                     <td>
                                         <img src="https://data.textstudio.com/output/user/store/e/e/9/c/28b611fc-3c74-4b84-812f-a4f50105c9ee.png"
-                                            alt="TextStudio" width="60%" />
+                                            alt="resend" width="60%" />
                                     </td>
                                     <td>
                                         <p class="glitch2">20:00</p>
